@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">                                                                                                                                                                                                                                                                                                      
+    <title>reclamação</title>
+    <style>
+        body {
+            background-color: #D0E8D0; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+            color: #0B1D12;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            min-height: 100vh;       
+            box-sizing: border-box;
+        }
+
+        .mensagem-container {
+            width: 100%;
+            max-width: 550px; 
+            text-align: center; 
+            background-color: rgba(255, 255, 255, 0.4); 
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(30, 70, 32, 0.15);
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 1.4;
+            color: #0B1D12;
+        }
+
+        h3 {
+            margin-bottom: 30px; 
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.6;
+            color: #1E4620; 
+        }
+
+        
+        .botoes-group {
+            display: flex;
+            gap: 15px; 
+            justify-content: center;
+        }
+
+    
+        .btn {
+            border: none;
+            border-radius: 8px;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex: 1; 
+            max-width: 140px;
+        }
+
+
+        .btn-sair {
+            background-color: #1E4620;
+            color: #D0E8D0;
+        }
+
+        .btn-sair:hover {
+            background-color: #0B1D12;
+        }
+
+
+        .btn-voltar {
+            background-color: transparent;
+            color: #1E4620;
+            border: 2px solid #1E4620;
+        }
+
+        .btn-voltar:hover {
+            background-color: rgba(30, 70, 32, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mensagem-container">
+        <h2>Sua reclamação foi encaminhada para a Secretaria Municipal de Transportes e Serviços Urbanos (SMTSU) ou para a Ouvidoria Geral do Município.</h2>
+        <h3>Caso sua reclamação seja aprovada e efetivada, entraremos em contato informando-o sobre o andamento do processo.</h3>
+        
+        <div class="botoes-group">
+            <button class="btn btn-voltar" onclick="window.location.href='cauatauavictor2.html'">Voltar</button>
+            
+            <button class="btn btn-sair" onclick="window.location.href='index.html'">Sair</button>
+        </div>
+    </div>
+
+</body>
+</html>
