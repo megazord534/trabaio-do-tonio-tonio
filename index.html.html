@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">                                                                                                                                                                                                                                                                                                      
+    <title>reclamação</title>
+    <style>
+        body {
+            background-color: #D0E8D0; 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #0B1D12;
+        }
+
+        /* Espaços de escrever (inputs de texto) */
+        input[type="text"] {
+            border: 2px solid #1E4620;
+            border-radius: 8px;
+            padding: 8px;
+            color: #1E4620;
+            background-color: #FFFFFF;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: rgba(30, 70, 32, 0.4);
+        }
+
+        /* Estilo do botão Continuar */
+        .btn-continuar {
+            background-color: #1E4620; /* Verde escuro */
+            color: #D0E8D0;            /* Texto claro */
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+        }
+
+        /* Efeito ao passar o mouse por cima do botão */
+        .btn-continuar:hover {
+            background-color: #0B1D12; /* Fica quase preto */
+            transform: translateY(-1px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Efeito ao clicar no botão */
+        .btn-continuar:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .botoes-group {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Login</h1>
+    <form action="/action_page.php" method="POST">
+        <label for="fname"><h2>Primeiro nome:</h2></label><br>
+        <input type="text" id="fname" name="fname" placeholder="nome f"><br><br>
+
+        <label for="lname"><h2>Último nome:</h2></label><br>
+        <input type="text" id="lname" name="lname" placeholder="nome l"><br><br>
+
+        <label for="cpf"><h2>CPF:</h2></label><br>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00"><br><br>
+        
+        <div class="botoes-group">
+            <button type="button" class="btn-continuar" onclick="window.location.href='cauatauavictor2.html'">Continuar</button>
+        </div>
+    </form> 
+    
+    <br>
+    <h4>ifmt bg .</h4>
+
+</body>
+</html>
